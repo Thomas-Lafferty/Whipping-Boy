@@ -53,17 +53,17 @@
 </head>
 
 <body id="mybody">
-<marquee>
-  <form method="post" action="maps.php">
-	  Location:
-	  <input type="text" name="location">
-	  <input type="submit">
-  </form>
-	<h1 id="myh">BANTA</h1>
-    <?php
-        $location=$_REQUEST['location'];
-        echo "<img id='myimg' src='https://maps.googleapis.com/maps/api/staticmap?center=$location&size=640x400&key=AIzaSyCDLuCCtz89sxyZDtS8cEynZRo6kIxLDfg'/>";
-    ?>
+	<marquee>
+		<form method="post" action="maps.php">
+			Location:
+			<input type="text" name="location">
+			<input type="submit">
+		</form>
+		<h1 id="myh">BANTA</h1>
+		<?php
+			$location=$_REQUEST['location'];
+			echo "<img id='myimg' src='https://maps.googleapis.com/maps/api/staticmap?center=$location&size=640x400&key=AIzaSyCDLuCCtz89sxyZDtS8cEynZRo6kIxLDfg'/>";
+		?>
 	</marquee>
 </body>
 </html>
